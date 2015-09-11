@@ -4,7 +4,7 @@ gulp.task('default', function() {
   // 将你的默认的任务代码放在这
 });
 
-gulp.task('concat',function() {
+gulp.task('construct',function() {
     gulp.src('src/page/**/*.html')
     	.pipe(contentIncluder({
           includerReg:/<!\-\-include\s+"([^"]+)"\-\->/g,

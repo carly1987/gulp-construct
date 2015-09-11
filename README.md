@@ -5,7 +5,7 @@ a plugin for gulp.js to include files
 ## Installation
 
 ```bash
-npm install gulp-utf8-convert
+npm install gulp-construct
 ```
 
 ## Options
@@ -20,13 +20,22 @@ Type: `String`
 
 ```js
 var gulp = require('gulp');
-var contentInclude = require('gulp-content-includer');
+var contentInclude = require('gulp-construct');
 
-gulp.task('concat',function() {
-    gulp.src("./content.html")
-        .pipe(contentInclude({
-            includerReg:/<!\-\-include\s+"([^"]+)"\-\->/g
-        }))
-        .pipe(gulp.dest('./'));
+gulp.task('construct',function() {
+    gulp.src('src/page/**/*.html')
+    	.pipe(contentIncluder({
+          includerReg:/<!\-\-include\s+"([^"]+)"\-\->/g,
+          type: 'html'
+      }))
+      .pipe(contentIncluder({
+          includerReg:/<link\s+href\=+"([^"]+)"\s+rel="stylesheet"\/>/g,
+          type: 'css'
+      }))
+      .pipe(contentIncluder({
+          includerReg:/<script\s+src\=+"([^"]+)"><\/script>/g,
+          type: 'js'
+      }))
+      .pipe(gulp.dest('./build'));
 });
 ```
