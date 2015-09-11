@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/carly1987/gulp-construct"
   },
   "author": {
     "name": "carly",
@@ -28,30 +28,30 @@
     "guid": "^0.0.12",
     "bluebird": "^2.3.11"
   },
-  "homepage": "",
-  "_id": "gulp-content-includer@0.0.5",
-  "_from": "gulp-content-includer@",
+  "homepage": "https://github.com/carly1987/gulp-construct",
+  "_id": "gulp-construct@0.0.0",
+  "_from": "gulp-construct@",
   "bugs": {
-    "url": "https://github.com/hellopao/gulp_plugin/issues"
+    "url": "https://github.com/carly1987/gulp-construct/issues"
   },
   "scripts": {},
-  "_shasum": "6e0518a557fdb44d0a6299c3d66eb3c86ae2a303",
-  "_npmVersion": "2.10.1",
-  "_nodeVersion": "0.12.4",
+  "_shasum": "",
+  "_npmVersion": "1.4.14",
+  "_nodeVersion": "0.10.29",
   "_npmUser": {
-    "name": "qinjia",
-    "email": "qinjia@outlook.com"
+    "name": "carly",
+    "email": "526450935@qq.com"
   },
   "dist": {
-    "shasum": "6e0518a557fdb44d0a6299c3d66eb3c86ae2a303",
-    "tarball": "http://registry.npmjs.org/gulp-content-includer/-/gulp-content-includer-0.0.5.tgz"
+    "shasum": "",
+    "tarball": ""
   },
   "maintainers": [
     {
-      "name": "qinjia",
-      "email": "qinjia@outlook.com"
+      "name": "carly",
+      "email": "526450935@qq.com"
     }
   ],
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/gulp-content-includer/-/gulp-content-includer-0.0.5.tgz"
+  "_resolved": ""
 }
