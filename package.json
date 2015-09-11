@@ -1,6 +1,6 @@
 {
   "name": "gulp-construct",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "concat the css, js and html to construct a html",
   "license": "MIT",
   "repository": {
