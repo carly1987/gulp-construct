@@ -1,16 +1,13 @@
 {
   "name": "gulp-construct",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "concat the css, js and html to construct a html",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/carly1987/gulp-construct"
   },
-  "author": {
-    "name": "carly",
-    "email": "526450935@qq.com"
-  },
+  "author": "carly <526450935@qq.com>",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -29,7 +26,6 @@
     "bluebird": "^2.3.11"
   },
   "homepage": "https://github.com/carly1987/gulp-construct",
-  "_id": "gulp-construct@0.0.0",
   "_from": "gulp-construct@",
   "bugs": {
     "url": "https://github.com/carly1987/gulp-construct/issues"
@@ -47,11 +43,10 @@
     "tarball": ""
   },
   "maintainers": [
-    {
-      "name": "carly",
-      "email": "526450935@qq.com"
-    }
+    "carly <526450935@qq.com>"
   ],
   "directories": {},
-  "_resolved": ""
+  "_resolved": "",
+  "main": "index.js",
+  "devDependencies": {}
 }
