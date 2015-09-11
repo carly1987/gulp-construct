@@ -1,6 +1,6 @@
-## gulp-content-includer
+## gulp-construct
 
-a plugin for gulp.js to include files 
+concat the css, js and html to construct a html
 
 ## Installation
 
@@ -8,31 +8,23 @@ a plugin for gulp.js to include files
 npm install gulp-construct
 ```
 
-## Options
-
-### includerReg: RegExp of the include expression
-Type: `RegExp` 
-
-### baseSrc: basedir of the source
-Type: `String` 
-
 ## Usage
 
 ```js
 var gulp = require('gulp');
-var contentInclude = require('gulp-construct');
+var construct = require('gulp-construct');
 
 gulp.task('construct',function() {
     gulp.src('src/page/**/*.html')
-    	.pipe(contentIncluder({
+    	.pipe(construct({
           includerReg:/<!\-\-include\s+"([^"]+)"\-\->/g,
           type: 'html'
       }))
-      .pipe(contentIncluder({
+      .pipe(construct({
           includerReg:/<link\s+href\=+"([^"]+)"\s+rel="stylesheet"\/>/g,
           type: 'css'
       }))
-      .pipe(contentIncluder({
+      .pipe(construct({
           includerReg:/<script\s+src\=+"([^"]+)"><\/script>/g,
           type: 'js'
       }))
