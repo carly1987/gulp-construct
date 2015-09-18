@@ -1,22 +1,20 @@
 var gulp = require('gulp');
-var contentIncluder = require('gulp-content-includer');
-var rename = require('gulp-rename');
-var insert = require('gulp-insert');
+var construct = require('gulp-construct');
 gulp.task('default', function() {
   // 将你的默认的任务代码放在这
 });
 
-gulp.task('concat',function() {
+gulp.task('gulp-construct',function() {
     gulp.src('src/page/**/*.html')
-    	.pipe(contentIncluder({
+    	.pipe(construct({
           includerReg:/<!\-\-include\s+"([^"]+)"\-\->/g,
           type: 'html'
       }))
-      .pipe(contentIncluder({
+      .pipe(construct({
           includerReg:/<link\s+href\=+"([^"]+)"\s+rel="stylesheet"\/>/g,
           type: 'css'
       }))
-      .pipe(contentIncluder({
+      .pipe(construct({
           includerReg:/<script\s+src\=+"([^"]+)"><\/script>/g,
           type: 'js'
       }))
